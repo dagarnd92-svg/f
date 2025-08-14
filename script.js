@@ -67,7 +67,6 @@ function whyUsObserver() {
         }, { threshold: 0.3 });
         features.forEach(feature => observer.observe(feature));
     } else {
-        // fallback for old browsers
         animateWhyUs();
     }
 }
@@ -83,18 +82,10 @@ partnersTrack.innerHTML = partnerLogos + partnerLogos + partnerLogos;
 const contactForm = document.querySelector('.contact-form form');
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    // Get form data
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
-    
-    // Here you would typically send the data to a server
     console.log('Form submitted:', data);
-    
-    // Show success message
     alert('Thank you for your message! We will get back to you soon.');
-    
-    // Reset form
     this.reset();
 });
 
@@ -112,7 +103,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
 document.querySelectorAll('.product-card, .about-card, .hero-stats .stat').forEach(el => {
     observer.observe(el);
 });
@@ -146,4 +136,29 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.hero-stats .stat').forEach(stat => {
     statsObserver.observe(stat);
+});
+
+
+// ===================
+// Carousel Auto Slide
+// ===================
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    if (!track) return; // Exit if carousel doesn't exist
+
+    const slides = document.querySelectorAll(".carousel-track img");
+    const slideCount = slides.length;
+    let currentIndex = 0;
+
+    function moveToSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        moveToSlide(currentIndex);
+    }
+
+    // 2s pause + 2.5s slide
+    setInterval(nextSlide, 4500);
 });
