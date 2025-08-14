@@ -420,5 +420,27 @@
     <a href="https://wa.me/919829134751" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="background:#25D366; width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.15); font-size:2rem;">
       <i class="fab fa-whatsapp" style="color:#fff;"></i>
     </a>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const slides = document.querySelectorAll(".carousel-track img");
+  const slideCount = slides.length;
+
+  let currentIndex = 0;
+
+  function moveToSlide(index) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    moveToSlide(currentIndex);
+  }
+
+  // Start autoplay with pause between slides
+  setInterval(nextSlide, 3000); // 3000ms = 3 seconds delay
+});
+</script>
+
 </body>
 </html>
