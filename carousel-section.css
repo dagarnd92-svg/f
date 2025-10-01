@@ -37,10 +37,15 @@
   transition: transform 2.5s ease-in-out;
 }
 .carousel-track img {
-  width: 100%;
+  /* Add side margins to create space between slides.
+     Adjust width so total (width + left/right margins) still equals 100%,
+     keeping translateX(-index * 100%) alignment intact. */
+  margin: 0 12px;
+  width: calc(100% - 24px);
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 @media (max-width: 900px) {
   .carousel {
