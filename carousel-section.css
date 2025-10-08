@@ -1,0 +1,70 @@
+/* Carousel Section Styles */
+.carousel-section {
+  width: 100vw;
+  min-width: 100vw;
+  background: #000;
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: var(--navbar-height, 90px);
+  margin-bottom: 0; /* Remove gap below carousel */
+  overflow: hidden;
+  position: relative;
+  z-index: 1100;
+}
+
+@media (max-width: 900px) {
+  .carousel-section {
+    margin-top: var(--navbar-height-mobile, 70px);
+    padding: 0;
+  }
+}
+
+.carousel {
+  width: 100vw;
+  min-width: 100vw;
+  aspect-ratio: 16 / 7; /* Increased height */
+  min-height: 420px;    /* Ensures good height on large screens */
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  height: auto;
+  display: block;
+}
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 2.5s ease-in-out;
+}
+.carousel-track img {
+  /* Add side margins to create space between slides.
+     Adjust width so total (width + left/right margins) still equals 100%,
+     keeping translateX(-index * 100%) alignment intact. */
+  margin: 0 12px;
+  width: calc(100% - 24px);
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .carousel {
+    border-radius: 0;
+    max-width: 100vw;
+    aspect-ratio: 16/10; /* Taller on mobile */
+    min-height: 260px;
+  }
+  .carousel-section {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    aspect-ratio: 16/14;
+    min-height: 180px;
+  }
+}

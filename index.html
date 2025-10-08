@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTINENTAL POWER CARE - Professional Solar Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dyZtC2Q6Qb8gQ2v9kXK1FQ+2h0j8VfZLr2Qy7t5lB1B5r5X4l5o5y5v5w5z5A5B5C5D5E5F5G5H5I5J5K5L5M5N5O5P5Q5R5S5T5U5V5W5X5Y5Z5a5b5c5d5e5f5g5h5i5j5k5l5m5n5o5p5q5r5s5t5u5v5w5x5y5z5A5B5C5D5E5F5G5H5I5J5K5L5M5N5O5P5Q5R5S5T5U5V5W5X5Y5Z5a5b5c5d5e5f5g5h5i5j5k5l5m5n5o5p5q5r5s5t5u5v5w5x5y5z==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+    <div class="nav-logo">
+        <img src="images/logo.png" alt="Logo" style="width: 200px; height: auto;" />
+
+    </div>
+    <div class="nav-right">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li class="dropdown products-dropdown-parent">
+    <a href="#products">Products</a>
+              <div class="dropdown-content products-dropdown">
+                <a href="acdb-dcdb.html">ACDB DCDB</a>
+                <a href="distribution-panel.html">DISTRIBUTION PANEL</a>
+                <a href="plc-scada-panel.html">PLC SCADA PANEL</a>
+                <a href="motor-starter-panels.html">MOTOR STARTER PANELS</a>
+                <a href="servo-stabilizer.html">SERVO STABILIZER</a>
+                <a href="apfc-panel.html">APFC PANEL</a>
+                <a href="meter-panels.html">METER PANELS</a>
+                <a href="amf-panel.html">AMF PANEL</a>
+                <a href="power-control-panels.html">POWER CONTROL PANELS</a>
+                <a href="motor-control-center-panels.html">MOTOR CONTROL CENTER PANELS</a>
+                <a href="load-sharing-panels.html">LOAD SHARING PANELS</a>
+                <a href="on-load-change-over-panels.html">ON LOAD CHANGE OVER PANELS</a>
+              </div>
+            </li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+        <a class="btn-primary nav-call-btn" href="tel:9829134751">Contact</a>
+        <div class="hamburger" aria-label="Open navigation" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    </nav>
+    
+    <link rel="stylesheet" href="carousel-section.css">
+    <section class="carousel-section">
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <img src="images/slide1.jpg" alt="Slide 1">
+          <img src="images/slide2.jpg" alt="Slide 2">
+          <img src="images/slide3.jpg" alt="Slide 3">
+          <img src="images/slide4.jpg" alt="Slide 4">
+        </div>
+      </div>
+    </section>
+    <script>
+      // Carousel auto-slide effect
+      const track = document.getElementById('carouselTrack');
+      const slides = track.children.length;
+      let index = 0;
+      setInterval(() => {
+        index = (index + 1) % slides;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }, 4000);
+    </script>
+    <script>
+    // Hamburger menu toggle (fixed for mobile)
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    hamburger.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+    });
+    // Close nav on link click (mobile only)
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 900) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text hero-fadein">
+                    <div class="hero-badge">
+                        ✓ Trusted by 500+ Companies Worldwide
+                    </div>
+                    <h1>Professional Solar Solutions for <span class="highlight">Modern Business</span></h1>
+                    <p>Industry-leading supplier of premium ACDB and DCDB solar panels. Engineered for maximum efficiency, built for enterprise reliability.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Request Consultation →</button>
+                        <button class="btn-outline">View Product Catalog</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="number">500+</div>
+                            <div class="label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">99.9%</div>
+                            <div class="label">System Uptime</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">2</div>
+                            <div class="label">Years Warranty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image hero-slidein-right">
+                    <img src="images/solar-hero.jpg" alt="Solar Installation">
+                    <div class="floating-card">
+                        <div class="card-icon">✓</div>
+                        <div class="card-text">
+                            <div class="card-title">ISO 9001 Certified</div>
+                            <div class="card-subtitle">Quality Assured</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Products Range Section -->
+    <section class="products-range-section">
+    <img src="images/ourproducts.jpg" alt="Our Products Range" class="products-heading-img">
+    <div class="products-heading-img-spacer"></div>
+    <div class="container">
+        <div class="section-header">
+           
+            </div>
+            <div class="products-range-grid">
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product1.jpg" alt="Product 1" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">ACDB-DCDB </div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product2.jpg" alt="Product 2" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">FUSE, SPD & MCB</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product3.jpg" alt="Product 3" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">LA & Earthing</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product4.jpg" alt="Product 4" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">MC4 Connector</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product5.jpg" alt="Product 5" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">Other Accessories</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product6.jpg" alt="Product 6" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">Solar Cleaning</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product7.jpg" alt="Product 7" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">Solar DC Wire</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product8.jpg" alt="Product 8" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">Solar Lights</div>
+</div>
+                <div class="product-card-wrapper">
+    <div class="product-card">
+        <a href="products.html">
+            <img src="images/product9.jpg" alt="Product 9" class="product-card-img">
+        </a>
+    </div>
+    <div class="product-name">Solar Structure</div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section with Sliding Animation -->
+  <section id="partners" class="partners">
+    <div class="container">
+      <div class="section-header">
+        <h2>Industry Leaders Trust Our Solutions</h2>
+        <p>Partnering with leading companies worldwide to deliver cutting-edge solar technology.</p>
+      </div>
+
+      <div class="partners-slider">
+        <div class="partners-track">
+          <!-- Repeat logos twice for seamless looping -->
+          <div class="partner-logo"><img src="images/logo_1.png" alt="Partner 1"></div>
+          <div class="partner-logo"><img src="images/logo_2.png" alt="Partner 2"></div>
+          <div class="partner-logo"><img src="images/logo_3.png" alt="Partner 3"></div>
+          <div class="partner-logo"><img src="images/logo_4.png" alt="Partner 4"></div>
+          <div class="partner-logo"><img src="images/logo_5.png" alt="Partner 5"></div>
+          <div class="partner-logo"><img src="images/logo_6.png" alt="Partner 6"></div>
+          <div class="partner-logo"><img src="images/logo_7.png" alt="Partner 7"></div>
+          <div class="partner-logo"><img src="images/logo_8.png" alt="Partner 8"></div>
+          <div class="partner-logo"><img src="images/logo_9.png" alt="Partner 9"></div>
+          <div class="partner-logo"><img src="images/logo_10.png" alt="Partner 10"></div>
+          <div class="partner-logo"><img src="images/logo_11.png" alt="Partner 11"></div>
+          <div class="partner-logo"><img src="images/logo_12.png" alt="Partner 12"></div>
+
+          <!-- Duplicate -->
+          <div class="partner-logo"><img src="images/logo_1.png" alt="Partner 1"></div>
+          <div class="partner-logo"><img src="images/logo_2.png" alt="Partner 2"></div>
+          <div class="partner-logo"><img src="images/logo_3.png" alt="Partner 3"></div>
+          <div class="partner-logo"><img src="images/logo_4.png" alt="Partner 4"></div>
+          <div class="partner-logo"><img src="images/logo_5.png" alt="Partner 5"></div>
+          <div class="partner-logo"><img src="images/logo_6.png" alt="Partner 6"></div>
+          <div class="partner-logo"><img src="images/logo_7.png" alt="Partner 7"></div>
+          <div class="partner-logo"><img src="images/logo_8.png" alt="Partner 8"></div>
+          <div class="partner-logo"><img src="images/logo_9.png" alt="Partner 9"></div>
+          <div class="partner-logo"><img src="images/logo_10.png" alt="Partner 10"></div>
+          <div class="partner-logo"><img src="images/logo_11.png" alt="Partner 11"></div>
+          <div class="partner-logo"><img src="images/logo_12.png" alt="Partner 12"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background:#fff; color:#232a35; text-align:center; padding:2.5rem 0 1.5rem 0;">
+        <h2 style="font-size:2rem; font-weight:700; margin-bottom:1.5rem; font-family:'Inter',sans-serif;">Frequently Asked Questions</h2>
+        <div class="faq-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;max-width:900px;margin:0 auto;">
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>Can I get technical sales support?</span>
+            </div>
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>What is the delivery time?</span>
+            </div>
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>Is there any discount or offer?</span>
+            </div>
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>Do you have return policies?</span>
+            </div>
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>Can I get help for installation?</span>
+            </div>
+            <div class="faq-item" style="background:#f8fafc;padding:1.2rem 1.6rem;border-radius:12px;text-align:left;font-size:1.08rem;font-weight:500;box-shadow:0 2px 12px -2px #2563eb11;">
+                <span>How do I claim warranty?</span>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Features Section -->
+<section class="feature-bar">
+    <style>
+      .feature-bar {
+        background-color: #4CAF50; /* Match logo and Contact button green */
+        color: white;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        font-family: 'Poppins', 'Segoe UI', sans-serif;
+      }
+  
+      .feature-bar .feature {
+        flex: 1 1 200px;
+        margin: 10px;
+      }
+  
+      .feature-bar .feature i {
+        font-size: 24px;
+        margin-bottom: 8px;
+        display: block;
+      }
+  
+      .feature-bar .feature-title {
+        font-weight: bold;
+        font-size: 16px;
+      }
+  
+      .feature-bar .feature-subtitle {
+        font-size: 14px;
+        margin-top: 4px;
+      }
+  
+      @media (max-width: 768px) {
+        .feature-bar {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    </style>
+  
+    <div class="feature">
+      <i class="fas fa-plane"></i>
+      <div class="feature-title">FAST DISPATCH</div>
+      <div class="feature-subtitle">Within 1 Working Day</div>
+    </div>
+  
+    <div class="feature">
+      <i class="fas fa-truck"></i>
+      <div class="feature-title">FREE SHIPPING</div>
+      <div class="feature-subtitle">To All Over India</div>
+    </div>
+  
+    <div class="feature">
+      <i class="fas fa-rupee-sign"></i>
+      <div class="feature-title">BEST QUALITY</div>
+      <div class="feature-subtitle">@Best Price Guaranteed</div>
+    </div>
+  
+    <div class="feature">
+      <i class="fab fa-whatsapp"></i>
+      <div class="feature-title">TECH SUPPORT</div>
+      <div class="feature-subtitle">24x7 Technical Support</div>
+    </div>
+  </section>
+  
+   
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content redesigned-footer">
+                <div class="footer-col footer-col-brand">
+                    <img src="images/footer.png" alt="CONTINENTAL" class="footer-logo-img" style="width: 150px; height: auto;" />
+                    <div class="footer-brand-name">CONTINENTAL POWER CARE</div>
+                    <div class="footer-tagline">Leading supplier of premium ACDB and DCDB solar panels, committed to delivering enterprise-grade renewable energy solutions.</div>
+                </div>
+                <nav class="footer-col footer-col-nav" aria-label="Footer Navigation">
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-col footer-col-contact">
+                    <div class="footer-contact-title">Contact</div>
+                    <div class="footer-contact-item"><span class="footer-icon">📍</span> 86, Gopal Bari, Lane No. 3, Jaipur - 302 001 (INDIA)</div>
+                    <div class="footer-contact-item"><span class="footer-icon"><i class="fas fa-phone" style="color:#fff;"></i></span>+91 9602756542</div>
+                    <div class="footer-contact-item"><span class="footer-icon">✉️</span> <a href="mailto:cpcjaipur1984@gmail.com">cpcjaipur1984@gmail.com</a></div>
+                    <div class="footer-contact-item"><span class="footer-icon">✉️</span> <a href="mailto:continental.powercare@yahoo.com">continental.powercare@yahoo.com</a></div>
+                    <div class="footer-contact-item footer-socials" style="margin-top: 0.7em; display: flex; gap: 12px; align-items: center;">
+                        <a href="https://www.instagram.com/continentalpowercare/" target="_blank" aria-label="Instagram" style="display:inline-flex;align-items:center;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#E1306C"/><path d="M12 8.4A3.6 3.6 0 1 0 12 15.6A3.6 3.6 0 1 0 12 8.4Z" stroke="#fff" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="0.8" fill="#fff"/><rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4.25" stroke="#fff" stroke-width="1.5"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/continentalpowercare" target="_blank" aria-label="Facebook" style="display:inline-flex;align-items:center;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#1877F3"/><path d="M15.5 8.5H14.5C13.95 8.5 13.5 8.95 13.5 9.5V11H15.5V13H13.5V19H11.5V13H10V11H11.5V9.5C11.5 8.12 12.62 7 14 7H15.5V8.5Z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="LinkedIn" style="display:inline-flex;align-items:center;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#0077B5"/><path d="M8.5 10H6.5V18H8.5V10ZM7.5 9C8.05228 9 8.5 8.55228 8.5 8C8.5 7.44772 8.05228 7 7.5 7C6.94772 7 6.5 7.44772 6.5 8C6.5 8.55228 6.94772 9 7.5 9ZM18 14.5C18 12.57 16.43 11 14.5 11C13.67 11 12.92 11.33 12.38 11.88L12.25 12V10H10.25V18H12.25V14.5C12.25 13.67 12.92 13 13.75 13C14.58 13 15.25 13.67 15.25 14.5V18H17.25V14.5C17.25 13.12 16.13 12 14.75 12C13.37 12 12.25 13.12 12.25 14.5V18H14.25V14.5C14.25 13.67 14.92 13 15.75 13C16.58 13 17.25 13.67 17.25 14.5V18H19.25V14.5C19.25 12.57 17.68 11 15.75 11C14.82 11 14 11.82 14 12.75V18H16V14.5Z" fill="#fff"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom redesigned-footer-bottom">
+                <span>&copy; 2024 CONTINENTAL POWER CARE. All rights reserved.</span>
+                <span class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919829134751" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="background:#25D366; width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.15); font-size:2rem;">
+      <i class="fab fa-whatsapp" style="color:#fff;"></i>
+    </a>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const slides = document.querySelectorAll(".carousel-track img");
+  const slideCount = slides.length;
+
+  let currentIndex = 0;
+
+  function moveToSlide(index) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    moveToSlide(currentIndex);
+  }
+
+  // Start autoplay with pause between slides
+  setInterval(nextSlide, 3000); // 3000ms = 3 seconds delay
+});
+</script>
+
+</body>
+</html>
