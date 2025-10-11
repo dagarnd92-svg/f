@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACDB DCDB | Continental Power Care</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <style>
+    .product-section {
+      padding: 40px 20px;
+      background: #fff;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #222;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .enquiry-btn {
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 24px;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      box-shadow: 0 2px 10px -2px #4CAF5022;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .enquiry-btn:hover {
+      background: #388e3c;
+      transform: translateY(-2px) scale(1.04);
+      color: #fff;
+    }
+    .product-specs {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 16px;
+      min-height: 60px;
+    }
+    @media (max-width: 700px) {
+      .product-section {
+        padding: 20px 5px;
+      }
+      .section-title {
+        font-size: 22px;
+        margin-bottom: 18px;
+      }
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+      .product-card {
+        max-width: 98vw;
+        width: 100%;
+        padding: 10px;
+      }
+      .product-card img {
+        height: 140px;
+      }
+      .product-name {
+        font-size: 16px;
+      }
+      .product-specs {
+        font-size: 13px;
+        min-height: 40px;
+      }
+      .enquiry-btn {
+        font-size: 15px;
+        padding: 12px 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Logo" style="width: 200px; height: auto;" />
+      </div>
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li class="dropdown products-dropdown-parent"><a href="#products">Products</a>
+            <div class="dropdown-content products-dropdown">
+              <a href="acdb-dcdb.html">ACDB DCDB</a>
+              <a href="distribution-panel.html">DISTRIBUTION PANEL</a>
+              <a href="plc-scada-panel.html">PLC SCADA PANEL</a>
+              <a href="motor-starter-panels.html">MOTOR STARTER PANELS</a>
+              <a href="servo-stabilizer.html">SERVO STABILIZER</a>
+              <a href="apfc-panel.html">APFC PANEL</a>
+              <a href="meter-panels.html">METER PANELS</a>
+              <a href="amf-panel.html">AMF PANEL</a>
+              <a href="power-control-panels.html">POWER CONTROL PANELS</a>
+              <a href="motor-control-center-panels.html">MOTOR CONTROL CENTER PANELS</a>
+              <a href="load-sharing-panels.html">LOAD SHARING PANELS</a>
+              <a href="on-load-change-over-panels.html">ON LOAD CHANGE OVER PANELS</a>
+            </div>
+          </li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+        <a class="btn-primary nav-call-btn" href="tel:9829134751">Contact</a>
+        <div class="hamburger" aria-label="Open navigation" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero" style="background: linear-gradient(135deg, #e7fbe9 0%, #d1fae5 100%); padding: 6rem 0 2rem;">
+    <div class="container">
+      <div class="hero-content" style="grid-template-columns: 1fr; text-align:center;">
+        <div class="hero-text hero-fadein">
+          <div class="hero-badge" style="background:#e7fbe9;color:#4CAF50;">Product Category</div>
+          <h1 style="color:#25632e;">ACDB DCDB</h1>
+          <p style="font-size:1.12rem;line-height:1.7;color:#232a35;max-width:800px;margin:1.5rem auto;">Continental Power Care is a premium Solar ACDB & DCDB Distributor based in Jaipur. Our ACDB distributes AC electricity post-inversion to loads or the grid, while safeguarding your system from faults, overcurrent and surges. At the same time, DCDB aggregates power from individual solar panel strings and routes it safely to the inverter. These products offer customers numerous advantages, including surge protection, certification and compliance, IP-rated enclosures, flexible configurations, and easy serviceability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACDB Products -->
+  <div class="product-section">
+    <div class="section-title">ACDB Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/1.jpg" alt="ACDB Single Phase Chint Sibass">
+        <div class="product-name">ACDB Single Phase Chint Sibass</div>
+        <div class="product-specs">Inbuilt Chint AC MCB 32A, Sibass AC SPD 320V, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Chint Sibass')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/2.jpg" alt="ACDB Single Phase Havells Sibass">
+        <div class="product-name">ACDB Single Phase Havells Sibass</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Sibass AC SPD 320V, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Havells Sibass')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/3.jpg" alt="ACDB Single Phase Elmex Havells">
+        <div class="product-name">ACDB Single Phase Elmex Havells</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Elmex AC SPD 320V, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Elmex Havells')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/4.jpg" alt="ACDB Single Phase Elmex Havells with Indicator">
+        <div class="product-name">ACDB Single Phase Elmex Havells with Indicator</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Elmex AC SPD 320V & Indicator, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Elmex Havells with Indicator')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/5.jpg" alt="ACDB Single Phase Havells with Indicator">
+        <div class="product-name">ACDB Single Phase Havells with Indicator</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Havells AC SPD 320V & Indicator, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Havells with Indicator')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/6.jpg" alt="ACDB Single Phase Havells">
+        <div class="product-name">ACDB Single Phase Havells</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Havells AC SPD 320V, 1kW – 7kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase Havells')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/7.jpg" alt="ACDB Three Phase Chint Sibass">
+        <div class="product-name">ACDB Three Phase Chint Sibass</div>
+        <div class="product-specs">Inbuilt Chint AC MCB 32A, Sibass AC SPD 320V, 5kW to 14kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Three Phase Chint Sibass')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/8.jpg" alt="ACDB Three Phase Havells Sibass">
+        <div class="product-name">ACDB Three Phase Havells Sibass</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Sibass AC SPD 320V, 5kW to 14kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Three Phase Havells Sibass')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/9.jpg" alt="ACDB Three Phase Havells Sibass 63A">
+        <div class="product-name">ACDB Three Phase Havells Sibass 63A</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 63A, Sibass AC SPD 320V, 12kW to 27kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Three Phase Havells Sibass 63A')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/10.jpg" alt="ACDB Three Phase Elmex Havells">
+        <div class="product-name">ACDB Three Phase Elmex Havells</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Elmex AC SPD 320V, 5kW to 14kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Three Phase Elmex Havells')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/11.jpg" alt="ACDB Three Phase Havells Sibass">
+        <div class="product-name">ACDB Three Phase Havells Sibass</div>
+        <div class="product-specs">Inbuilt Havells AC MCB 32A, Sibass AC SPD 320V, 5kW to 14kW</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Three Phase Havells Sibass')">ENQUIRY</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DCDB Products -->
+  <div class="product-section">
+    <div class="section-title">DCDB Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/12.jpg" alt="DCDB 1 in 1 out Sibass 600V">
+        <div class="product-name">DCDB 1 in 1 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 600V, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/13.jpg" alt="DCDB 1 in 1 out Sibass 1000V">
+        <div class="product-name">DCDB 1 in 1 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 1000V, 1 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/14.jpg" alt="DCDB 1 in 1 out Elmex 600V">
+        <div class="product-name">DCDB 1 in 1 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Elmex SPD 600V, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Elmex 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/15.jpg" alt="DCDB 1 in 1 out Elmex 30A 600V">
+        <div class="product-name">DCDB 1 in 1 out Elmex 30A 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 30A, Elmex SPD 600V, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Elmex 30A 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/16.jpg" alt="DCDB 1 in 1 out Elmex 1000V">
+        <div class="product-name">DCDB 1 in 1 out Elmex 1000V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Elmex SPD 1000V, 1 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Elmex 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/17.jpg" alt="DCDB 1 in 1 out with MCB Sibass Havells 600V">
+        <div class="product-name">DCDB 1 in 1 out with MCB Sibass Havells 600V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 600V & Havells DC MCB 20A, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out with MCB Sibass Havells 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/18.jpg" alt="DCDB 1 in 1 out Elmex Havells MCB 600V">
+        <div class="product-name">DCDB 1 in 1 out Elmex Havells MCB 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Elmex SPD 600V & Havells DC MCB 20A, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Elmex Havells MCB 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/19.jpg" alt="DCDB 1 in 1 out Elmex Havells MCB 600V 16A">
+        <div class="product-name">DCDB 1 in 1 out Elmex Havells MCB 600V (16A)</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Havells SPD 600V & Havells DC MCB 16A, 1 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Elmex Havells MCB 600V (16A)')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/20.jpg" alt="DCDB 1 in 1 out Havells 32A">
+        <div class="product-name">DCDB 1 in 1 out Havells 32A</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 30A, Havells SPD 600V & Havells DC MCB 32A, 2 Series/String x up to 12 Panels Max each</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out Havells 32A')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/21.jpg" alt="DCDB 1 in 1 out 1000V MCB Elmex">
+        <div class="product-name">DCDB 1 in 1 out 1000V MCB Elmex</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Elmex SPD 1000V & Elmex DC MCB, 1 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 1 in 1 out 1000V MCB Elmex')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/22.jpg" alt="DCDB 2 in 2 out Sibass 600V">
+        <div class="product-name">DCDB 2 in 2 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 600V, 2 Series/String x up to 12 Panels Max in Each String</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 2 in 2 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/23.jpg" alt="DCDB 2 in 2 out Elmex 600V">
+        <div class="product-name">DCDB 2 in 2 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Elmex SPD 600V, 2 Series/String x up to 12 Panels Max in Each String</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 2 in 2 out Elmex 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/24.jpg" alt="DCDB 2 in 2 out Sibass 1000V">
+        <div class="product-name">DCDB 2 in 2 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse, Sibass DC SPD 1000V</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 2 in 2 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/25.jpg" alt="DCDB 2 in 2 out Sibass Havells MCB 600V">
+        <div class="product-name">DCDB 2 in 2 out Sibass Havells MCB 600V</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 600V & Havells DC MCB 20A, 2 Series/String x up to 12 Panels Each String Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 2 in 2 out Sibass Havells MCB 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/26.jpg" alt="DCDB 2 in 2 out Elmex Havells 600V">
+        <div class="product-name">DCDB 2 in 2 out Elmex Havells 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 20A, Havells SPD 600V, 2 Series/String x up to 12 Panels Max in Each String</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 2 in 2 out Elmex Havells 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/27.jpg" alt="DCDB 3 in 3 out 600V Sibass">
+        <div class="product-name">DCDB 3 in 3 out 600V Sibass</div>
+        <div class="product-specs">Inbuilt Sibass DC Fuse 20A, Sibass SPD 600V, 3 Series/String x up to 12 Panels Each String Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('DCDB 3 in 3 out 600V Sibass')">ENQUIRY</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AJB DCDB Products -->
+  <div class="product-section">
+    <div class="section-title">AJB DCDB Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/28.jpg" alt="AJB DCDB 2 in 1 out Sibass 600V">
+        <div class="product-name">AJB DCDB 2 in 1 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Sibass Fuses, 600V Sibass SPD, 2 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/29.jpg" alt="AJB DCDB 2 in 1 out Sibass 1000V">
+        <div class="product-name">AJB DCDB 2 in 1 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Sibass Fuse, 1000V Sibass SPD, 2 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/30.jpg" alt="AJB DCDB 2 in 1 out Elmex 600V">
+        <div class="product-name">AJB DCDB 2 in 1 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Elmex Fuses, 600V Elmex SPD, 2 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Elmex 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/31.jpg" alt="AJB DCDB 2 in 1 out Elmex 1000V">
+        <div class="product-name">AJB DCDB 2 in 1 out Elmex 1000V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Elmex Fuses, 1000V Elmex SPD, 2 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Elmex 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/32.jpg" alt="AJB DCDB 2 in 1 out Sibass with Havells MCB 600V">
+        <div class="product-name">AJB DCDB 2 in 1 out Sibass with Havells MCB 600V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Sibass Fuses, 600V Sibass SPD, 32A MCB, 2 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Sibass with Havells MCB 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/33.jpg" alt="AJB DCDB 2 in 1 out with MCB 600V">
+        <div class="product-name">AJB DCDB 2 in 1 out with MCB 600V</div>
+        <div class="product-specs">Inbuilt 2 x 20A Fuses, 600V SPD, 32A MCB, 2 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out with MCB 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/34.jpg" alt="AJB DCDB 2 in 1 out Elmex Havells MCB 600V">
+        <div class="product-name">AJB DCDB 2 in 1 out Elmex Havells MCB 600V</div>
+        <div class="product-specs">Inbuilt Elmex DC Fuse 2 x 20A, Havells SPD 600V, Havells MCB 32A, 2 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out Elmex Havells MCB 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/35.jpg" alt="AJB DCDB 2 in 1 out 1000V MCB Sibass">
+        <div class="product-name">AJB DCDB 2 in 1 out 1000V MCB Sibass</div>
+        <div class="product-specs">Inbuilt 2 x 20A Sibass Fuses, Sibass 1000V SPD, 32A MCB, 2 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 2 in 1 out 1000V MCB Sibass')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/36.jpg" alt="AJB DCDB 3 in 1 out Sibass 600V">
+        <div class="product-name">AJB DCDB 3 in 1 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt 3 x 20A Sibass Fuses, 600V Sibass SPD, 3 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 3 in 1 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/37.jpg" alt="AJB DCDB 3 in 1 out Sibass 1000V">
+        <div class="product-name">AJB DCDB 3 in 1 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt 3 x 20A Sibass Fuses, Sibass 1000V SPD, 3 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 3 in 1 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/38.jpg" alt="AJB DCDB 4 in 1 out Sibass 600V">
+        <div class="product-name">AJB DCDB 4 in 1 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt 4 x 20A Sibass Fuses, 600V Sibass SPD, 4 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/39.jpg" alt="AJB DCDB 4 in 1 out Sibass 1000V">
+        <div class="product-name">AJB DCDB 4 in 1 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt 4 x 20A Sibass Fuses, Sibass 1000V SPD, 4 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/40.jpg" alt="AJB DCDB 4 in 1 out Elmex 600V">
+        <div class="product-name">AJB DCDB 4 in 1 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt 4 x 20A Fuses, 600V SPD, 4 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Elmex 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/41.jpg" alt="AJB DCDB 4 in 1 out Elmex 1000V">
+        <div class="product-name">AJB DCDB 4 in 1 out Elmex 1000V</div>
+        <div class="product-specs">Inbuilt 4 x 20A Fuses, 1000V SPD, 4 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Elmex 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/42.jpg" alt="AJB DCDB 4 in 1 out Elmex Havells 600V">
+        <div class="product-name">AJB DCDB 4 in 1 out Elmex Havells 600V</div>
+        <div class="product-specs">Inbuilt Elmex Fuses 4 x 20A, Havells SPD 600V, 4 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Elmex Havells 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/43.jpg" alt="AJB DCDB 4 in 1 out Elmex Havells 1000V">
+        <div class="product-name">AJB DCDB 4 in 1 out Elmex Havells 1000V</div>
+        <div class="product-specs">Inbuilt Elmex Fuses 4 x 20A, Havells SPD 1000V, 4 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 4 in 1 out Elmex Havells 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/44.jpg" alt="AJB DCDB 5 in 1 out Sibass 600V">
+        <div class="product-name">AJB DCDB 5 in 1 out Sibass 600V</div>
+        <div class="product-specs">Inbuilt 5 x 20A Sibass Fuses, Sibass 600V SPD, 5 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 5 in 1 out Sibass 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/45.jpg" alt="AJB DCDB 5 in 1 out Sibass 1000V">
+        <div class="product-name">AJB DCDB 5 in 1 out Sibass 1000V</div>
+        <div class="product-specs">Inbuilt 5 x 20A Sibass Fuses, Sibass 1000V SPD, 5 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 5 in 1 out Sibass 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/46.jpg" alt="AJB DCDB 5 in 1 out Elmex 600V">
+        <div class="product-name">AJB DCDB 5 in 1 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt 5 x 20A Fuses, 600V SPD, 5 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 5 in 1 out Elmex 600V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/47.jpg" alt="AJB DCDB 5 in 1 out Elmex Havells 1000V">
+        <div class="product-name">AJB DCDB 5 in 1 out Elmex Havells 1000V</div>
+        <div class="product-specs">Inbuilt Elmex Fuses 5 x 20A, Havells SPD 1000V, 5 Series/String x up to 20 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 5 in 1 out Elmex Havells 1000V')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/48.jpg" alt="AJB DCDB 6 in 1 out Elmex 600V">
+        <div class="product-name">AJB DCDB 6 in 1 out Elmex 600V</div>
+        <div class="product-specs">Inbuilt 6 x 20A Fuses, 600V SPD, 6 Series/String x up to 12 Panels Max</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('AJB DCDB 6 in 1 out Elmex 600V')">ENQUIRY</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACDB DCDB Combo Products -->
+  <div class="product-section">
+    <div class="section-title">ACDB DCDB Combo Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/49.jpg" alt="ACDB Single Phase DCDB 1 in 1 out 600V Combo Chint">
+        <div class="product-name">ACDB Single Phase DCDB 1 in 1 out 600V Combo Chint</div>
+        <div class="product-specs">ACDB Single Phase 32A 320V SIBASS SPD + DCDB 1 in 1 Out 600V Sibass SPD</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase DCDB 1 in 1 out 600V Combo Chint')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/50.jpg" alt="ACDB Single Phase DCDB 1 in 1 out 600V Havells Combo">
+        <div class="product-name">ACDB Single Phase DCDB 1 in 1 out 600V Havells Combo</div>
+        <div class="product-specs">ACDB Single Phase 32A 320V Sibass SPD + DCDB 1 in 1 Out 600V SPD</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase DCDB 1 in 1 out 600V Havells Combo')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/51.jpg" alt="ACDB Single Phase 32A 320V SPD + DCDB 1 in 1 Out 600V SPD">
+        <div class="product-name">ACDB Single Phase 32A 320V SPD + DCDB 1 in 1 Out 600V SPD</div>
+        <div class="product-specs">Complete ACDB DCDB Combo Solution</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase 32A 320V SPD + DCDB 1 in 1 Out 600V SPD')">ENQUIRY</button>
+      </div>
+      <div class="product-card">
+        <img src="images/52.jpg" alt="ACDB Single Phase with Indicator + DCDB 1 in 1 Out with MCB">
+        <div class="product-name">ACDB Single Phase with Indicator + DCDB 1 in 1 Out with MCB</div>
+        <div class="product-specs">ACDB Single Phase 32A 320V SPD With Indicator + DCDB 1 in 1 Out 600V SPD With MCB</div>
+        <button class="enquiry-btn" onclick="handleEnquiry('ACDB Single Phase with Indicator + DCDB 1 in 1 Out with MCB')">ENQUIRY</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleEnquiry(productName) {
+      const phoneNumber = "tel:+919829134751";
+      window.location.href = phoneNumber;
+    }
+  </script>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content redesigned-footer">
+        <div class="footer-col footer-col-brand">
+          <img src="images/footer.png" alt="CONTINENTAL" class="footer-logo-img" style="width: 150px; height: auto;" />
+          <div class="footer-brand-name">CONTINENTAL POWER CARE</div>
+          <div class="footer-tagline">Leading supplier of premium ACDB and DCDB solar panels, committed to delivering enterprise-grade renewable energy solutions.</div>
+        </div>
+        <nav class="footer-col footer-col-nav" aria-label="Footer Navigation">
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col footer-col-contact">
+          <div class="footer-contact-title">Contact</div>
+          <div class="footer-contact-item"><span class="footer-icon">📍</span> 86, Gopal Bari, Lane No. 3, Jaipur - 302 001 (INDIA)</div>
+          <div class="footer-contact-item"><span class="footer-icon"><i class="fas fa-phone" style="color:#fff;"></i></span>+91 9602756542</div>
+          <div class="footer-contact-item"><span class="footer-icon">✉️</span> <a href="mailto:cpcjaipur1984@gmail.com">cpcjaipur1984@gmail.com</a></div>
+          <div class="footer-contact-item"><span class="footer-icon">✉️</span> <a href="mailto:continental.powercare@yahoo.com">continental.powercare@yahoo.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom redesigned-footer-bottom">
+        <span>&copy; 2024 CONTINENTAL POWER CARE. All rights reserved.</span>
+        <span class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms of Service</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

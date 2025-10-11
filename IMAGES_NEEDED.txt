@@ -1,0 +1,135 @@
+================================================================
+CONTINENTAL POWER CARE - PRODUCT IMAGES REQUIRED
+================================================================
+
+You need to download the following images and save them in the "images/" folder.
+Each category needs 6 product images.
+
+================================================================
+1. DISTRIBUTION PANEL (6 images)
+================================================================
+- dist-panel-1.jpg (LT Distribution Panel)
+- dist-panel-2.jpg (HT Distribution Panel)
+- dist-panel-3.jpg (Main Distribution Panel)
+- dist-panel-4.jpg (Sub Distribution Panel)
+- dist-panel-5.jpg (Power Distribution Board)
+- dist-panel-6.jpg (Industrial Distribution Panel)
+
+================================================================
+2. PLC SCADA PANEL (6 images)
+================================================================
+- plc-scada-1.jpg (PLC Control Panel)
+- plc-scada-2.jpg (SCADA Panel)
+- plc-scada-3.jpg (PLC SCADA Integrated Panel)
+- plc-scada-4.jpg (Industrial Automation Panel)
+- plc-scada-5.jpg (HMI Panel)
+- plc-scada-6.jpg (Process Control Panel)
+
+================================================================
+3. MOTOR STARTER PANELS (6 images)
+================================================================
+- motor-starter-1.jpg (DOL Starter Panel)
+- motor-starter-2.jpg (Star Delta Starter Panel)
+- motor-starter-3.jpg (Soft Starter Panel)
+- motor-starter-4.jpg (VFD Panel)
+- motor-starter-5.jpg (Auto Star Delta Panel)
+- motor-starter-6.jpg (Reversing Starter Panel)
+
+================================================================
+4. SERVO STABILIZER (6 images)
+================================================================
+- servo-1.jpg (Air Cooled Servo Stabilizer)
+- servo-2.jpg (Oil Cooled Servo Stabilizer)
+- servo-3.jpg (Three Phase Servo Stabilizer)
+- servo-4.jpg (Single Phase Servo Stabilizer)
+- servo-5.jpg (Automatic Servo Stabilizer)
+- servo-6.jpg (Industrial Servo Stabilizer)
+
+================================================================
+5. APFC PANEL (6 images)
+================================================================
+- apfc-1.jpg (Microprocessor Based APFC)
+- apfc-2.jpg (Relay Based APFC Panel)
+- apfc-3.jpg (Three Phase APFC Panel)
+- apfc-4.jpg (Capacitor Bank Panel)
+- apfc-5.jpg (Intelligent APFC Panel)
+- apfc-6.jpg (Detuned APFC Panel)
+
+================================================================
+6. METER PANELS (6 images)
+================================================================
+- meter-1.jpg (Energy Meter Panel)
+- meter-2.jpg (Multi-function Meter Panel)
+- meter-3.jpg (Sub Meter Panel)
+- meter-4.jpg (Check Meter Panel)
+- meter-5.jpg (Smart Meter Panel)
+- meter-6.jpg (Analog Meter Panel)
+
+================================================================
+7. AMF PANEL (6 images)
+================================================================
+- amf-1.jpg (Single Phase AMF Panel)
+- amf-2.jpg (Three Phase AMF Panel)
+- amf-3.jpg (Digital AMF Panel)
+- amf-4.jpg (Manual AMF Panel)
+- amf-5.jpg (Smart AMF Panel)
+- amf-6.jpg (Industrial AMF Panel)
+
+================================================================
+8. POWER CONTROL PANELS (6 images)
+================================================================
+- pcc-1.jpg (Main PCC Panel)
+- pcc-2.jpg (LT PCC Panel)
+- pcc-3.jpg (HT PCC Panel)
+- pcc-4.jpg (Industrial PCC)
+- pcc-5.jpg (Modular PCC Panel)
+- pcc-6.jpg (Intelligent PCC)
+
+================================================================
+9. MOTOR CONTROL CENTER PANELS (6 images)
+================================================================
+- mcc-1.jpg (Fixed MCC Panel)
+- mcc-2.jpg (Drawout MCC Panel)
+- mcc-3.jpg (Intelligent MCC)
+- mcc-4.jpg (VFD MCC Panel)
+- mcc-5.jpg (Soft Starter MCC)
+- mcc-6.jpg (Modular MCC)
+
+================================================================
+10. LOAD SHARING PANELS (6 images)
+================================================================
+- load-sharing-1.jpg (Parallel Load Sharing Panel)
+- load-sharing-2.jpg (Generator Synchronizing Panel)
+- load-sharing-3.jpg (Multi-Generator LSP)
+- load-sharing-4.jpg (Digital Load Sharing Panel)
+- load-sharing-5.jpg (Export Load Sharing)
+- load-sharing-6.jpg (Smart LSP Panel)
+
+================================================================
+11. ON LOAD CHANGE OVER PANELS (6 images)
+================================================================
+- olco-1.jpg (Single Phase OLCO Panel)
+- olco-2.jpg (Three Phase OLCO Panel)
+- olco-3.jpg (Motorized OLCO Panel)
+- olco-4.jpg (Automatic OLCO Panel)
+- olco-5.jpg (High Capacity OLCO)
+- olco-6.jpg (Smart OLCO Panel)
+
+================================================================
+TOTAL IMAGES NEEDED: 66 images
+================================================================
+
+INSTRUCTIONS:
+1. Search for each product type on Google Images or stock photo sites
+2. Download high-quality images (minimum 800x600 pixels)
+3. Rename them exactly as shown above
+4. Save all images in the "images/" folder
+5. All pages are ready with "CONTACT US" buttons that call +919829134751
+
+NOTES:
+- The acdb-dcdb.html page already has all products from products.html
+- All other product pages have been created with product grids
+- Each "CONTACT US" button triggers a phone call to +919829134751
+- All pages have consistent green theme and responsive design
+
+
