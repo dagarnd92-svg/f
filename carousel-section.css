@@ -1,8 +1,8 @@
 /* Carousel Section Styles */
 .carousel-section {
-  width: 100vw;
-  min-width: 100vw;
-  background: #f5f5f5;
+  width: 100%;
+  max-width: 100vw;
+  background: #ffffff;
   display: block;
   padding: 0;
   margin: 0;
@@ -10,7 +10,8 @@
   margin-bottom: 0;
   overflow: hidden;
   position: relative;
-  z-index: 1100;
+  z-index: 50;
+  box-sizing: border-box;
 }
 
 @media (max-width: 900px) {
@@ -22,15 +23,16 @@
 
 .carousel {
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   height: 0;
-  padding-bottom: 38%; /* Optimized to reduce vacant space */
+  padding-bottom: 42%;
   position: relative;
   overflow: hidden;
   border-radius: 0;
   box-shadow: none;
   margin: 0;
-  background: #f5f5f5;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
 .carousel-track {
@@ -41,27 +43,46 @@
   height: 100%;
   display: flex;
   transition: transform 2.5s ease-in-out;
+  box-sizing: border-box;
 }
 
 .carousel-track img {
   width: 100%;
   height: 100%;
+  min-width: 100%;
+  max-width: 100%;
   object-fit: contain;
   object-position: center;
   flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 100%;
   box-sizing: border-box;
-  background: #f5f5f5;
-  max-height: 100%;
+  background: #ffffff;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 @media (max-width: 900px) {
   .carousel {
-    padding-bottom: 45%; /* Optimized for tablet */
+    padding-bottom: 56%;
+  }
+  .carousel-track img {
+    object-fit: contain;
   }
 }
 
 @media (max-width: 600px) {
   .carousel {
-    padding-bottom: 55%; /* Optimized for mobile */
+    padding-bottom: 75%;
+  }
+  .carousel-track img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    padding-bottom: 85%;
   }
 }
