@@ -13,18 +13,75 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
+  const navClose = document.querySelector('.nav-close');
+  console.log('Hamburger:', hamburger);
+  console.log('Nav Menu:', navMenu);
   if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Hamburger clicked!');
       hamburger.classList.toggle('active');
       navMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll', navMenu.classList.contains('active'));
+      console.log('Menu active:', navMenu.classList.contains('active'));
     });
 
-    // Close mobile menu when clicking on a link
+    hamburger.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll', navMenu.classList.contains('active'));
+      }
+    });
+
+    // Mobile dropdown toggle
+    const productDropdown = document.querySelector('.products-dropdown-parent');
+    if (productDropdown) {
+      const dropdownLink = productDropdown.querySelector('a');
+      if (dropdownLink) {
+        dropdownLink.addEventListener('click', function(e) {
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+            productDropdown.classList.toggle('active');
+          }
+        });
+      }
+    }
+
+    // Close mobile menu when clicking on a link (but not dropdown parent)
     document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 900) {
+          // Don't close if it's the products dropdown parent link
+          if (!link.parentElement.classList.contains('products-dropdown-parent')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+          }
+        }
+      });
+    });
+
+    // Close via X button
+    if (navClose) {
+      navClose.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
       });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900) {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          document.body.classList.remove('no-scroll');
+        }
+      }
     });
   }
 
