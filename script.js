@@ -188,6 +188,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.querySelectorAll('.hero-stats .stat').forEach(stat => statsObserver.observe(stat));
 
+  // Global enquiry handler to redirect to WhatsApp
+  window.handleEnquiry = function(productName) {
+    const phone = '919829134751'; // without leading + for wa.me
+    const text = productName ? `Hello! I am interested in ${productName}.` : 'Hello! I would like to make an enquiry.';
+    const encoded = encodeURIComponent(text);
+    const url = `https://wa.me/${phone}?text=${encoded}`;
+    window.location.href = url;
+  };
+
   // ===================
   // Carousel Auto Slide
   // ===================
