@@ -58,10 +58,22 @@
     <section class="carousel-section">
       <div class="carousel">
         <div class="carousel-track" id="carouselTrack">
-          <img src="images/slide1.jpg" alt="Slide 1">
-          <img src="images/slide2.jpg" alt="Slide 2">
-          <img src="images/slide3.jpg" alt="Slide 3">
-          <img src="images/slide4.jpg" alt="Slide 4">
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/slide1-mobile.jpg">
+            <img src="images/slide1.jpg" alt="Slide 1">
+          </picture>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/slide2-mobile.jpg">
+            <img src="images/slide2.jpg" alt="Slide 2">
+          </picture>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/slide3-mobile.jpg">
+            <img src="images/slide3.jpg" alt="Slide 3">
+          </picture>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/slide4-mobile.jpg">
+            <img src="images/slide4.jpg" alt="Slide 4">
+          </picture>
         </div>
       </div>
     </section>
