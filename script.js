@@ -85,6 +85,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Global contact button behavior
+  window.CONTACT_PAGE_PATH = window.CONTACT_PAGE_PATH || 'contact.html';
+  const contactButton = document.querySelector('.nav-call-btn');
+  if (contactButton) {
+    contactButton.setAttribute('href', window.CONTACT_PAGE_PATH);
+    contactButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = window.CONTACT_PAGE_PATH;
+    });
+  }
+
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
   if (navbar) {
