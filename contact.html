@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Contact | Continental Power Care</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -13,7 +14,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #f7f9fc;
       color: #333;
       line-height: 1.6;
@@ -27,6 +28,7 @@
 
     .contact {
       padding: 4rem 0;
+      background: linear-gradient(135deg, #e7fbe9 0%, #d1fae5 100%);
     }
 
     .contact h2 {
@@ -35,7 +37,7 @@
     }
 
     .gradient-text {
-      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      background: linear-gradient(90deg, #4CAF50, #388e3c);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -43,7 +45,7 @@
     .contact-divider {
       width: 60px;
       height: 4px;
-      background: #ff8a00;
+      background: #4CAF50;
       margin: 1rem 0 2rem;
     }
 
@@ -72,7 +74,7 @@
     }
 
     .contact-link {
-      color: #ff5c00;
+      color: #4CAF50;
       text-decoration: none;
     }
 
@@ -109,18 +111,28 @@
     }
 
     .btn-primary {
-      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      background: #4CAF50;
       color: white;
       border: none;
       padding: 0.9rem 1.5rem;
       font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 2px 10px -2px #4CAF5022;
     }
 
     .btn-primary:hover {
-      opacity: 0.9;
+      background: #388e3c;
+      transform: translateY(-1px);
+    }
+
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #4CAF50;
+      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
     }
 
     @media (max-width: 768px) {
@@ -178,11 +190,7 @@
             </div>
             <input type="email" name="Email" placeholder="Email Address" required>
             <input type="tel" name="Phone" placeholder="Phone Number" required>
-            <select name="Project Type" required>
-              <option value="">Select project type</option>
-              <option>Residential Solar Installation</option>
-              <option>Commercial Solar Project</option>
-            </select>
+           
             <textarea name="Message" placeholder="Tell us about your project requirements..." required></textarea>
             <button type="submit" class="btn-primary">Send Message</button>
           </form>
